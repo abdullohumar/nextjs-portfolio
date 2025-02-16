@@ -26,7 +26,8 @@ export default {
         'float': 'float 6s ease-in-out infinite',
         'gradient': 'gradient 8s ease infinite',
         'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'spin-slow': 'spin 3s linear infinite', 
+        'spin-slow': 'spin 3s linear infinite',
+        'underline-bar' : 'underline2 2s ease-out infinite' 
       },
       fontFamily: {
         poppins: ['var(--font-poppins)'],
@@ -47,6 +48,10 @@ export default {
         underline: {
           '0%': { transform: 'scaleX(0)' },
           '100%': { transform: 'scaleX(1)' },
+        },
+        underline2: {
+          '0%' : {transform: 'translateX(-100%)'},
+          '100%' : {transform: 'translateX(250%)'}
         }
       },
     },
