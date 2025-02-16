@@ -45,7 +45,7 @@ export default function SelectedProject() {
         <section className="min-h-screen flex bg-black justify-center items-center relative ">
             <motion.div
                 style={{ y }}
-                className="max-w-7xl p-8"
+                className="max-w-7xl p-8 bg-slate-900 rounded-xl"
             >
                 <motion.div
                     initial={{ opacity: 0, y: 0 }}
@@ -87,8 +87,8 @@ export default function SelectedProject() {
                                     />
                                 </motion.div>
                                 <motion.div
-                                transition={{ duration: 0.2 }} 
-                                className="p-4 flex flex-col gap-2">
+                                    transition={{ duration: 0.2 }}
+                                    className="p-4 flex flex-col gap-2">
                                     <div className="flex items-center justify-between">
                                         <h2 className="text-2xl font-bold text-white">{project.title}</h2>
                                         <ArrowUpRightIcon className="h-6 w-6 text-white hover:scale-110 transition-all duration-300 ease-in-out hover:text-primary" />
@@ -108,7 +108,14 @@ export default function SelectedProject() {
                         ))
                         }
                     </div>
-
+                    <div className="flex justify-end mt-8 hover:text-white hover:underline transition-all duration-300 ease-in-out">
+                        <a
+                            href="#"
+                            className="text-white/10 hover:text-white"
+                        >
+                            View All Project ~&gt;
+                        </a>
+                    </div>
                 </motion.div>
             </motion.div>
         </section>
