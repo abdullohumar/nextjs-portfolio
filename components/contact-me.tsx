@@ -18,7 +18,10 @@ export default function ContactMe() {
                     className="flex flex-col items-center mb-8"
                 >
                     <h1 className="font-mono font-bold text-4xl text-white pb-2">Contact Me</h1>
-                    <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full mt-2" />
+                    <div className="w-[30%] relative bg-gradient-to-l from-primary to-tertiary h-[3px] rounded-full overflow-hidden">
+                        <div className="absolute w-full bg-gradient-to-r from-primary to-tertiary h-full rounded-full animate-underline-bar" />
+                        <div className="absolute w-full bg-gradient-to-l from-primary to-tertiary h-full rounded-full animate-underline-bar" />
+                    </div>
                 </motion.div>
 
                 <motion.div
@@ -59,7 +62,7 @@ export default function ContactMe() {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-gradient-to-r from-cyan-400 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-400/30 transition-all transform hover:scale-105 active:scale-95"
+                            className="w-full bg-gradient-to-r from-primary to-tertiary text-white py-3 px-6 rounded-lg font-semibold hover:shadow-md hover:shadow-primary/30 transition-all transform hover:scale-100 active:scale-95"
                         >
                             Send Message
                         </button>
