@@ -42,10 +42,10 @@ export default function SelectedProject() {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [0, 500], [0, 100])
     return (
-        <section className="min-h-screen flex bg-black justify-center items-center relative ">
+        <section className="min-h-screen overflow-hidden flex bg-black justify-center relative pt-10">
             <motion.div
                 style={{ y }}
-                className="max-w-7xl p-8 bg-slate-900 rounded-xl"
+                className="max-w-7xl p-4 rounded-xl"
             >
                 <motion.div
                     initial={{ opacity: 0, y: 0 }}
@@ -111,7 +111,7 @@ export default function SelectedProject() {
                     <div className="flex justify-end mt-8 hover:text-white hover:underline transition-all duration-300 ease-in-out">
                         <a
                             href="#"
-                            className="text-white/10 hover:text-white"
+                            className="text-white/50 hover:text-white"
                         >
                             View All Project ~&gt;
                         </a>
