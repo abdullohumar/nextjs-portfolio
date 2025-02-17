@@ -47,7 +47,7 @@ export default function ContactMe() {
                                 name="email"
                                 required
                                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition-all"
-                                placeholder="Email"
+                                placeholder="example@mail.com"
                             />
                         </div>
                         <div className="relative">
